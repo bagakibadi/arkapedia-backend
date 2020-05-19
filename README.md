@@ -1,98 +1,63 @@
 <h1 align="center">
   <br>
-  <img src="https://miro.medium.com/max/661/1*TkP2EwaX95ItAv_jGS7hSA.png" width="400">
+  <img src="https://vuejs.org/images/logo.png" width="200">
   <br>
-  Arkapedia (Clone Tokopedia) - Backend
+  Arkapedia (Clone Tokopedia) - Vue Js
   <br>
 </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/ExpressJs-v4.17.1-yellow">
+  <img src="https://img.shields.io/badge/Vue%20Js-v2.6.11-yellow">
   <img src="https://img.shields.io/badge/Axios-v0.19.2-blue">
-  <img src="https://img.shields.io/badge/Sequelize-v5.21.6-important">
-  <img src="https://img.shields.io/badge/Nodemailer-v6.4.6-red">
+  <img src="https://img.shields.io/badge/Vuelidate-v0.7.5-important">
 </p>
 
 ## Table of Contents
-- [Prerequiste](#prerequiste)
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [Related Project](#related-project)
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Usage for Development](#usage-for-development)
+- [Create Environment Variable](#create-environment-variable)
+- [Related Project](#related-project-backend)
 - [Contributors](#contributors)
+- [Contact](#contact)
 
-## Prerequiste
-- Sequelize - Download and Install [Sequelize](https://sequelize.org/)
+## Features
 
-## Installation
-### Clone
-1. Clone this repository
-```
-$ git clone https://github.com/HiRahmat-Dev/tokosidia-API.git
-$ cd tokosidia-API
-$ npm install
-```
-2. create folder named config on the root directory
-```
-Inside the config folder, create a file named config.json
-```
-3. Copy paste the code down below to file config.json
-```
-{
-  "development": {
-    "username": "your database username",
-    "password": "your database password",
-    "database": "arkapedia",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "your database username",
-    "password": "your database password",
-    "database": "arkapedia",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "your database username",
-    "password": "your database password",
-    "database": "arkapedia",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
-```
-5. Open your database
-```
-Create new database called "arkapedia"
-```
-6. Run 
-```
-npx sequelize-cli db:migrate
-```
-7. Create file .env on your root directory
-8. Copy paste this code to file .env
-```
-PORT = 5000
-SECRET_KEY = 'Bismillah'
-EMAIL = 'your email' (this email to send activate user to your account)
-PASS = 'your password'
-```
-9. Start development server
-```
-$ npm run serve
-```
-## Contributing
+- Users who are not logged in can only view the product
+- Users must sign up and sign in to make a transaction and see their profiles
+- And others
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+## Requirements
 
-Fork the Project
-1. Create your Feature Branch  ```git checkout -b [feature]```
-2. Commit your Changes ```git commit -m 'Add some feature'```
-3. Push to the Branch ```git push origin [feature]```
-4. Open a Pull Request
+- Node.js - Download and Install [Node.js](https://nodejs.org/en/).
+- Vue.js - Download and Install [Vue.js](https://vuejs.org/v2/guide/)
 
-## Related Project
-* [`Arkapedia-Frontend-VueJs`](https://github.com/ichvanul/arkapedia.client.git)
+## Usage for development
+
+1. Open your terminal or command prompt
+2. Type `git clone https://github.com/ichvanul/arkapedia.client.git`
+3. Open the folder and type `npm install` for install dependencies
+4. Create Environment Variable [here](#create-environment-variable)
+5. Before run this, you must run backend first
+6. Type `npm run serve` for run this app.
+
+## Create Environment Variable
+
+```
+$ touch .env.local
+$ nano .env.local
+```
+
+```
+# Set API KEY
+VUE_APP_URL_API=YOUR_HOST_URL
+VUE_APP_SECRET_KEY_TOKEN=YOUR_API_KEY
+```
+
+## Related Project (Backend)
+
+* [`Backend-Arkapedia`](https://github.com/ichvanul/arkapedia.server.git)
 
 ## Contributors
 
@@ -138,3 +103,7 @@ Fork the Project
     </tr>
   </table>
 </center>
+
+## Contact
+
+If you want to contact me you can reach me at <ichvanulyp@gmail.com>
