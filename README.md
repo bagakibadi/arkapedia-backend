@@ -106,4 +106,4 @@ VUE_APP_SECRET_KEY_TOKEN=YOUR_API_KEY
 
 ## Contact
 
-If you want to contact me you can reach me at <ichvanulyp@gmail.com>
+MyEmail : solaybagus2@gmail.com
